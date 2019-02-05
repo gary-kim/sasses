@@ -1,0 +1,30 @@
+.tipsy-inner {
+    color: rgb(255,255,255) !important;
+}
+.tipsy-inner * {
+    color: rgb(255,255,255);
+}
+.sasses-arrow {
+    transition-property: transform;
+    transition-duration: 0.2s;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.overdue-submissions > h3 {
+    cursor:pointer;
+    -moz-user-select: none;
+    user-select: none;
+}
+.sasses-arrow.sasses-arrow-left {
+    transform: rotate(270deg);
+}
+.sasses-arrow.sasses-arrow-right {
+    transform: rotate(90deg);
+}
+.sasses-arrow.sasses-arrow-down {
+    transform: rotate(180deg);
+}
+.sasses-hide {
+    visibility: hidden;
+    position: absolute;
+}

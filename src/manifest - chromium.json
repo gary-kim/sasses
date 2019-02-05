@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name": "SAS Schoology Enhancement Suite",
+    "short_name": "SAS SES",
+    "version": "0.1.0.0",
+    "author": "Gary Kim",
+    "homepage_url":"https://gschool.ydgkim.com/sasschoology/",
+    "description": "Provides various enhancements for SAS Schoology",
+    "permissions": [
+        "storage",
+        "unlimitedStorage",
+        "clipboardWrite",
+        "https://sas.schoology.com/*",
+        "webRequest",
+        "webRequestBlocking",
+        "webNavigation",
+        "tabs"
+    ],
+    "icons": {
+        "128": "icons/128.png"
+    },
+    "options_ui": {
+        "page": "ui/options.html"
+    },
+    "web_accessible_resources": [
+        "web_accessible_resources/*",
+        "3rdparty/SpinKit/8-circle.css"
+    ],
+    "background": {
+        "scripts": ["chromium/browser-polyfill.js","js/background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://sas.schoology.com/*"],
+            "js": ["chromium/browser-polyfill.js","js/sasschoology.js"],
+            "css": ["3rdparty/SpinKit/8-circle.css","css/main.css"],
+            "run_at": "document_start"
+        }
+    ]
+}

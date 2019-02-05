@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <form>   
+        <label><input type="checkbox" id="analytics" />Enable Analytics</label>
+        <br />
+        <label><input type="checkbox" id="schoology-analytics" />Allow Schoology Analytics</label>
+        <br />
+        <label><input type="checkbox" id="useful-tooltips" />Enable Useful Tooltips</label>
+        <hr />
+        <label>Schoology Background Color: </label>
+        <input type="color" id="background-color" class="color-selector" sasses-color-apply-to="background_color" />
+        <input type="button" id="background-color-default" value="Default" class="default-color-selector" sasses-color-apply-to="background_color" />
+        <br />
+        <label>Schoolgy Toolbar Color: </label>
+        <input type="color" id="topbar-color" class="color-selector" sasses-color-apply-to="header_color" />
+        <input type="button" id="topbar-color-default" value="Default" class="default-color-selector" sasses-color-apply-to="header_color" />
+        <br />
+        <label>Schoology Card Color: </label>
+        <input type="color" id="card-color" class="color-selector" sasses-color-apply-to="card_color" />
+		<input type="button" id="card-color-default" value="Default" class="default-color-selector" sasses-color-apply-to="card_color" />
+
+
+    </form>
+    <br />
+    
+    <footer>
+        <br />
+        For any inquiries regarding downloading or deleting collected analytics data, please email <a href="mailto:kim42176@sas.edu.sg">kim42176@sas.edu.sg</a>.<br />
+        <br />
+        Analytics ID: <span id="analytics-id"></span><span  style="white-space: nowrap; padding-left: 5px;"></span><button id="copy-analytics-id">Copy</button><br />
+        <br />
+        More info: <br />
+        <a href="https://gschool.ydgkim.com/sasschoology/?pk_campaign=SASSES&pk_kwd=options-page" id ="website-link">https://gschool.ydgkim.com/sasschoology/</a><br />
+        <br />
+        Source Code: <br />
+        <a href="https://gitlab.com/garykim/sasses" id="source-code-link">https://gitlab.com/garykim/sasses</a><br />
+    </footer>
+    <script src="options.js"></script>
+</body>
+</html>
